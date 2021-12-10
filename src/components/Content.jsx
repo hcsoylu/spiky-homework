@@ -91,7 +91,7 @@ const ContentBox = styled.div`
   margin: 0 auto;
 
   .content {
-    min-height: 600px;
+    min-height: 530px;
     display: flex;
 
     .left {
