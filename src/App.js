@@ -25,6 +25,10 @@ function App() {
   console.log("hey", process.env.REACT_API_KEY);
 
   const getWeather = async () => {
+    if (input === "") {
+      alert("Please type city name");
+      return;
+    }
     setIsFetched(false);
     setLoading(true);
     const { data } = await axios.get(
